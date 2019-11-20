@@ -1,0 +1,110 @@
+/* Colors
+DarkBlue: #7BACB3
+Greenish: #83C3CC
+light pink: #FFBDDF
+Light Yellow #FFF5A9
+darkPink: #B37293
+font-family: 'Poppins', sans-serif;
+font-family: 'Nunito', sans-serif;
+*/
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #83C3CC;
+  background-color: #FFF5A9;
+  margin: 0;
+}
+
+/* ===========
+Typography
+============= */
+
+.title{
+  margin: 0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3{
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
+  margin: 0 auto;
+  color: #B37293;
+  font-weight: 900;
+  padding: 0;
+}
+
+h2{
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto 0.5em 0;
+}
+
+.subtitle{
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #FFBDDF;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a{
+  padding: 0.5em;
+  text-decoration: none;
+  color:inherit;
+  padding-bottom: 0.5em;
+}
+
+a:hover{
+    color: #7BACB3;
+}
+
+.currentPage:hover{
+    color: #83C3CC
+}
+
+p{
+  margin: 0;
+}
+
+/* ============
+    Layout
+=========== */
+
+.container{
+  width: 90%;
+  max-width: 800px;
+  background-color: #FFF;
+  margin: 0 auto 2rem auto;
+  padding: 2rem 0;
+}
+
+nav{
+  margin: 0 auto;
+}
+
+.navCls{
+  display: flex;
+  justify-content: center;
+}
+
+.cls1{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
+.col-1{
+  width: 30%;
+}
+
+.col-2{
+  width: 60%
+}
+
+img{
+  width: 100%;
+}

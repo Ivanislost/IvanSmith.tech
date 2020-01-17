@@ -7,11 +7,14 @@ darkPink: #B37293
 font-family: 'Poppins', sans-serif;
 font-family: 'Nunito', sans-serif;
 */
+html{
+  height: 100%;
+}
 
 body{
-  font-family: 'Poppins', sans-serif;
-  color: #83C3CC;
-  background-color: #FFF5A9;
+
+  color: #565554;
+  background-color: #edf2f2;
   margin: 0;
 }
 
@@ -19,92 +22,55 @@ body{
 Typography
 ============= */
 
-.title{
-  margin: 0;
-  text-align: center;
-  margin-bottom: 1rem;
+.lightRed{
+  color: #f4a261;
+}
+.lightBlue{
+  color: #2a9d8f;
 }
 
-h3{
-  font-family: 'Nunito', sans-serif;
-  font-size: 3rem;
-  margin: 0 auto;
-  color: #B37293;
-  font-weight: 900;
-  padding: 0;
+.sideBar{
+  padding: 2rem 2rem 2rem 2rem;
+  font-family: 'Lustria', serif;
+  font-size: 1.6em;
+  text-align: right;
+}
+.content{
+  padding: 5rem;
+  font-family: 'Poppins', sans-serif;
 }
 
-h2{
-  font-family: 'Nunito', sans-serif;
-  margin: 0 auto 0.5em 0;
+
+/* ===========
+Layout
+========== */
+
+body{
+  width: 100%;
+  height: 100%;
 }
 
-.subtitle{
-  margin: 0 auto;
-  font-size: 1.5rem;
-  color: #FFBDDF;
-}
-
-nav ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav a{
-  padding: 0.5em;
-  text-decoration: none;
-  color:inherit;
-  padding-bottom: 0.5em;
-}
-
-a:hover{
-    color: #7BACB3;
-}
-
-.currentPage:hover{
-    color: #83C3CC
-}
-
-p{
-  margin: 0;
-}
-
-/* ============
-    Layout
-=========== */
-
-.container{
+.siteContainer{
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  max-width: 1300px;
   width: 90%;
-  max-width: 800px;
-  background-color: #FFF;
-  margin: 0 auto 2rem auto;
-  padding: 2rem 0;
-}
-
-nav{
   margin: 0 auto;
+  background-color: white;
+}
+.sideBar{
+  position: relative;
+  box-sizing: border-box;
+  flex: 0 0 300px;
+  background-color: #565554;
+  color: #edf2f2;
+
 }
 
-.navCls{
-  display: flex;
-  justify-content: center;
+.mainContainer{
+  flex: 1 1 0;
 }
-
-.cls1{
-  display: flex;
-  justify-content: space-between;
-  margin: 0 2rem;
-}
-
-.col-1{
-  width: 30%;
-}
-
-.col-2{
-  width: 60%
-}
-
-img{
+.hero img{
   width: 100%;
 }

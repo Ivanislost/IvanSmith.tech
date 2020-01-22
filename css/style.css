@@ -1,0 +1,209 @@
+/* #ECD97E */
+
+
+
+@font-face {
+  font-family: 'lust';
+  src: url('../fonts/LustSlim.ttf');
+}
+
+@font-face {
+  font-family: "neuzeit";
+  src: url('../fonts/NeuzeitSBook.ttf');
+}
+html{
+  background-color: #FFFFFF;
+}
+
+
+img{
+  width: 100%;
+}
+/*=========
+  typography
+  =========*/
+
+body{
+  color: #2C2C35;
+  font-family: 'neuzeit';
+}
+h2{
+    font-family: 'lust';
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.logo{
+  font-size: 3rem;
+  font-family: 'lust';
+  font-weight: 400;
+}
+.accent{
+  color: #da4312;
+}
+
+.widget-title{
+  margin-bottom: 0.3em;
+}
+
+
+
+
+
+/*  ======
+    Layout
+    ======*/
+.hero{
+  width: 100%;
+  height: 50vh;
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contentContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+/* =====
+    Header/nav
+  =====*/
+  header{
+    padding-top: 5vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.625rem;
+    color: #53a474;
+    text-decoration: none;
+    margin: 0.5em;
+  }
+
+  .current-page{
+    color: #E49829;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #E49829;
+  }
+
+  @media (min-width:600px) {
+    header{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .logo{
+      text-align: left;
+      flex: 1 1 0;
+    }
+    nav{
+      flex: 0 1 40%;
+      margin-bottom: 0.5em;
+    }
+    nav ul{
+      display: flex;
+    }
+    nav a{
+      font-size: 1.25rem;
+    }
+
+  }
+
+/* ======
+recent posts
+======= */
+
+.article-recent{
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-bottom: 2vh;
+  border-bottom: 1px solid #da4312;
+}
+
+.article-recent:first-child{
+  padding-top: 2vh;
+  border-top: 1px solid #da4312;
+
+}
+
+
+.article-recent-secondary{
+  order: -1;
+  margin-bottom: 1em;
+}
+
+/* ========
+widget
+======== */
+aside{
+  padding: 2em;
+  border: 1px solid #E49829;
+}
+
+.sidebar-widget{
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #da4312;
+}
+.sidebar-widget:last-child{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.sidebar-widget img{
+  height: 5em;
+  object-fit: cover;
+}
+
+
+/* Removes content for mobile */
+
+@media (max-width: 600px) {
+  aside{
+    display: none;
+  }
+}
+
+/* layout for deskweb form */
+
+@media (min-width: 600px) {
+  .contentContainer{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 2em;
+  }
+  main{
+    flex: auto;
+  }
+
+  aside{
+    flex: 0 0 15%;
+    margin-left: 5%;
+  }
+
+  .article-recent{
+    flex-direction: row;
+  }
+
+  .article-recent-main{
+    flex: 2.5 1 0;
+  }
+  .article-recent-secondary{
+    flex: 1 1 0;
+    margin-right: 2%;
+  }
+
+}

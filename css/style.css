@@ -46,7 +46,24 @@ h2{
   margin-bottom: 0.3em;
 }
 
+nav a{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.625rem;
+  color: #53a474;
+  text-decoration: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+a:hover, a:focus{
+  color: #da4312;
+}
 
+.current-page{
+  color: #E49829;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #E49829;
+}
 
 
 
@@ -81,21 +98,7 @@ h2{
     text-align: center;
   }
 
-  nav a{
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.625rem;
-    color: #53a474;
-    text-decoration: none;
-    margin: 0;
-    box-sizing: border-box;
-  }
 
-  .current-page{
-    color: #E49829;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #E49829;
-  }
 
   @media (min-width:700px) {
     header{
@@ -109,7 +112,7 @@ h2{
       flex: 1 1 0;
     }
     nav{
-      flex: 0 0 300px;
+      flex: 0 0 340px;
       margin-bottom: 0.5em;
     }
     nav ul{

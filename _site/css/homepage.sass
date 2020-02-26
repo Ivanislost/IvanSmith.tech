@@ -1,0 +1,70 @@
+@import 'base'
+@import 'sideBar'
+@import 'headnav'
+
+.date
+  @extend %smaller-info
+
+
+// layout
+
+.homeContainer
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+
+// recent posts
+
+.article-recent
+  margin: 5vh auto
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  box-sizing: border-box
+  padding-bottom: 2vh
+  border-bottom: 1px solid $accent_color
+
+.article-recent:first-child
+  padding-top: 2vh
+  border-top: 1px solid $accent_color
+
+.article-recent-secondary
+  order: -1
+  margin-bottom: 1em
+
+
+// media queries mobile remove
+
+@media (max-width: $breakpoint-deskweb)
+  aside
+    display: none
+
+
+// media queries webDesk
+
+@media (min-width: $breakpoint-deskweb)
+
+  .homeContainer
+    flex-direction: row
+    justify-content: space-between
+    align-items: start
+    margin-top: 2em
+
+  main
+    flex: auto
+
+  aside
+    flex: 0 0 15%
+    margin-left: 5%
+
+  .article-recent
+    flex-direction: row
+
+  .article-recent-main
+    flex: 2.5 1 0
+
+  .article-recent-secondary
+    flex: 1 1 0
+    margin-right: 2%

@@ -1,0 +1,85 @@
+/* Styling */
+.phTopics{
+  padding: 1em;
+}
+.phTopicsTitle{
+  font-family: 'lust';
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  color: #53a474;
+}
+
+.phTopicsTitle.phTopicsCurrent{
+  color: #E49829;
+  padding-bottom: 0.125em;
+  border-bottom: 1px solid #E49829;
+}
+
+.thumbnails{
+  box-sizing: border-box;
+  padding: 0.5em
+}
+
+.current{
+  border: 3px solid #E49829;
+}
+
+.thumbnails>div{
+  margin-top: 10px;
+}
+.thumbnails>div:first-child{
+  margin-top: 0;
+}
+
+.phInfo{
+  padding: 1em;
+}
+
+.phTitle{
+  font-family: 'lust';
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 0.5em;
+}
+
+.phDescription{
+  font-size: 0.875rem;
+}
+
+
+
+
+/* Layout */
+.phContainer{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.phTopics{
+  flex: 0 0 150px;
+}
+
+.galleryContainer{
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+.thumbnails{
+  flex: 0 1 100px;
+}
+
+.thumbnails img{
+  display: block;
+  width: 100%;
+}
+
+.photo{
+  flex: 1 1 0;
+}
+
+.phInfo{
+  flex: 0 0 200px;
+}

@@ -5,18 +5,53 @@
   <title>IvanSmith</title>
   <script src="javascripts/p5.js"></script>
   <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/homepage.css">
 </head>
 
   <body>
     <header class="container">
   <div class="logo">
-    <h3 class="">IvanSmith<span class="accent">.tech</span></h3>
+    <h3 class=""><<a href="/">IvanSmith<span class="accent">.tech</span></a></h3>
   </div>
   <nav>
     <ul>
-  <li><a href="Blog.html">Blog⤵</a></li>
-  <li><a href="Projects">Projects⤵</a></li>
+  <li class="drop-menu">
+      <a href="#">Blog⤵</a>
+      <div class="menu-content">
+        
+        <div class="navPost">
+          <p class="title">Chorro, you immaculate slab</p>
+          <p class="date">February 20, 2020</p>
+        </div>
+        
+        <div class="navPost">
+          <p class="title">Creating my first Jekyll Layout</p>
+          <p class="date">January 20, 2020</p>
+        </div>
+        
+        <div class="navPost">
+          <p class="title">Creating my first Jekyll Layout</p>
+          <p class="date">January 20, 2020</p>
+        </div>
+        
+        <div class="navPost">
+          <p class="title">Creating my first Jekyll Layout</p>
+          <p class="date">January 20, 2020</p>
+        </div>
+        
+      </div>
+  </li>
+  <li class="drop-menu">
+    <a href="#">Projects⤵</a>
+    <div class="menu-content">
+      <div class="navProject">
+        <a class="title" href="/projects/photography">Photography</a>
+      </div>
+      <div class="navProject">
+        <a href="/projects/pointFloat" class="title">Floating Points</a>
+      </div>
+    </div>
+  </li>
   <li><a href="about-me.html" class="current-page">About me</a></li>
 </ul>
 
@@ -27,11 +62,56 @@
       <div class="hero">
 </div>
 
-<div class="contentContainer">
+<div class="homeContainer">
   <main>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <div class="articles">
+  
+  <article class="article-recent">
+    <article class="article-recent-main">
+      <h2>Chorro, you immaculate slab</h2>
+      <p><p>El Chorro, Europe’s winter getaway. With Dec-feb temperatures raging up to 30 it is the perfect destination for those who don’t like freezing their fingers off on their local crags. Yes, Chorro is is as its name alludes, (well, any spanish-sounding name does to me), sunbathing galore for the average climber. Where in the summer it may get up to 45 degrees celsius, even in the winter you must humble in its heat, for Chorro knows very little sun-sheltered walls.</p>
+
+</p>
+      <a href="/2020/02/20/Chorro,-you-immaculate-slab.html" class="readMore"> Continue Reading</a>
+    </article>
+
+    <article class="article-recent-secondary">
+      <img src="/images/post.jpg" alt="an image for a post">
+      <p class="article-info date">February 20, 2020</p>
+    </article>
+  </article>
+  
+  <article class="article-recent">
+    <article class="article-recent-main">
+      <h2>Creating my first Jekyll Layout</h2>
+      <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</p>
+      <a href="/2020/01/20/Creating-first-jekyll4.html" class="readMore"> Continue Reading</a>
+    </article>
+
+    <article class="article-recent-secondary">
+      <img src="/images/post.jpg" alt="an image for a post">
+      <p class="article-info date">January 20, 2020</p>
+    </article>
+  </article>
+  
+  <article class="article-recent">
+    <article class="article-recent-main">
+      <h2>Creating my first Jekyll Layout</h2>
+      <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</p>
+      <a href="/2020/01/20/Creating-first-jekyll3.html" class="readMore"> Continue Reading</a>
+    </article>
+
+    <article class="article-recent-secondary">
+      <img src="/images/post.jpg" alt="an image for a post">
+      <p class="article-info date">January 20, 2020</p>
+    </article>
+  </article>
   
   <article class="article-recent">
     <article class="article-recent-main">
@@ -44,7 +124,7 @@
 
     <article class="article-recent-secondary">
       <img src="/images/post.jpg" alt="an image for a post">
-      <p class="article-info">January 20, 2020</p>
+      <p class="article-info date">January 20, 2020</p>
     </article>
   </article>
   
@@ -52,7 +132,7 @@
 
   </main>
 
-  <aside class="asideContainer">
+  <aside class="sidebar">
     <div class="sidebar-widget">
       <h2 class="widget-title">About me</h2>
       <img src="images/about-me.jpg" alt="">

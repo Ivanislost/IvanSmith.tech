@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div class="projectContainer">
+  <div class="sketchContainer">
+    <div id="sketch">
+
+    </div>
+    <div class="settings">
+      <div class="setting">
+        <p>xSpeed</p>
+        <div id="slider1" class="hx-slider"></div>
+      </div>
+      <div class="setting">
+        <p>ySpeed</p>
+        <div id="slider2" class="hx-slider"></div>
+      </div>
+      <div class="setting">
+        <p>xAmplitude</p>
+        <div id="slider3" class="hx-slider"></div>
+      </div>
+      <div class="setting">
+        <p>yAmplitude</p>
+        <div id="slider4" class="hx-slider"></div>
+      </div>
+      <div class="setting">
+        <p>xDisXTime</p>
+        <div id="slider5" class="hx-slider"></div>
+      </div>
+      <div class="setting">
+        <p>xDisYTime</p>
+        <div id="slider6" class="hx-slider"></div>
+      </div>
+      <div class="setting">
+        <p>yDisXTime</p>
+        <div id="slider7" class="hx-slider"></div>
+      </div>
+      <div class="setting">
+        <p>YDisYTime</p>
+        <div id="slider8" class="hx-slider"></div>
+      </div>
+    </div>
+  </div>
+  <div class="sketchInfo">
+    <h2 class="sketchTitle">Floating <span class="accent">Points</span></h2>
+    <div class="sketchContent">
+      <p>This is a sketch made using the <a href="#">p5 library</a>. This sketch is based on a grid of points each being displaced on the x and y axes. The displacement is being done through trigonometric functions. The way you design this displacement is key to creating a 'satisfying' or 'spacy' effect. This sketch is far from finished. I have used this sketch both to dive into trigonomic functions a bit further, and to start some exploratory learning into implementing sliders into my p5 sketches.</p>
+
+
+      <p>The base design for displacement on an axis looks like this:<span class="accent">amplitude*sin(xSpeed 2*xDisXtime*xNum + 2*xDisYTime*yNum)</span>. Now this probably looks really confusing. well, to be honest, to me it sort of is aswell. I will try to give a short explanation. What is happening here is that the displacement is regulated by 7 variables. the amplitude(setting), frameCount(linear increase), xSpeed(setting), xDisp(setting), xNum(constant), yDisp(setting) and yNum(constant). If we back look at the basic trigonomic function we have all learned back in high school (at the end of this post). we can see that the value for a given position x is calculated by 4 variables, the x, the Amplitude, the speed and the phase.</p>
+
+      <p> The amplitude is simple, it is set with a slider, the x is represented by frameCount, the variable with a linear increase (think of it as framerate, or the number of frames that have been expired since loading the page), the speed is set with a slider, it will shorten the period (frameCount is used in the speed method), the phase is calculated as a constant for each different gridpoint. by letting the phase be manipulated by four different variables (its position (2 axes), and that positions manipulation), it is possible to create a 'wavy' effect.
+      </p>
+
+      <p>I am looking to create more settings for this particular sketch as it will improve my understanding of the subject as well as give more incentive for observers to play with it. Thus far I've been able to lose myself into this sketch for quite a while</p>
+    </div>
+  </div>
+</div>
+
+<script src="/javascripts/hexagon.js" charset="utf-8"></script>
+<link rel="stylesheet" href="/css/hexagon.css">
+<link rel="stylesheet" href="/css/floatingPoints.css">
+<script src="/javascripts/p5.js" charset="utf-8"></script>
+<script src="/javascripts/floatingPoints.js" charset="utf-8"></script>

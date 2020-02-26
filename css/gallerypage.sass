@@ -1,0 +1,78 @@
+@import 'base'
+
+// Typography
+.phTopicsTitle
+  font-family: 'lust'
+  font-weight: 500
+  font-size: 1.5rem
+  margin-bottom: 0.5em
+  color: $base_color
+
+.phTopicsTitle.phTopicsCurrent
+  color: $accent_off_color
+  padding-bottom: 0.125em
+  border-bottom: 1px solid $accent_off_color
+
+.phTitle
+  font-family: 'lust'
+  font-weight: 500
+  font-size: 1.25rem
+  margin-bottom: 0.5em
+
+.phDescription
+  font-size: 0.875rem
+
+
+// sizing & styling
+
+.phTopics
+  padding: 1em
+
+.thumbnails
+  box-sizing: border-box
+  padding: 0.5em
+
+  img
+    display: block
+    width: 100%
+
+  >div
+    margin-top: 10px
+
+  >div:first-child
+    margin-top: 0
+
+  .current
+    border: 3px solid $accent_off_color
+
+
+
+//layout. phContainer contains topics and gallery container,
+// Gallery container contains thumbs, photos & info
+
+.phContainer
+  margin-top: 2em
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: row
+
+.phTopics
+  flex: 0 0 150px
+
+.galleryContainer
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: row
+  flex: auto
+
+.thumbnails
+  flex: 0 1 100px
+
+.photo
+  flex: 1 1 0
+
+.phInfo
+  flex: 0 0 200px
+  padding: 1em

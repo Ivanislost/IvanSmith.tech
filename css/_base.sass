@@ -1,0 +1,70 @@
+
+$base_color: #2C2C35
+$accent_color: #da4312
+$light_color: #53a474
+$accent_off_color: #E49829
+$weird_yellow: #ECD97E
+
+$breakpoint-deskweb: 700px
+
+// Snippets
+
+%subtitle
+  font-family: 'lust'
+  font-weight: 400
+  font-size: 1.25rem
+
+%smaller-info
+  color: $light_color
+  text-transform: uppercase
+  letter-spacing: 0.125em
+  font-size: 0.875rem
+
+// Typographyload
+
+@font-face
+  font-family: 'lust'
+  src: url('../fonts/LustSlim.ttf')
+
+@font-face
+  font-family: "neuzeit"
+  src: url('../fonts/NeuzeitSBook.ttf')
+
+// Typoooography
+
+
+body
+  color: $base_color
+  font-family: 'neuzeit'
+
+h2
+  @extend %subtitle
+
+strong
+  font-weight: bolder
+
+.accent
+  color: $accent_color
+
+// colouring & styling etc
+
+body
+  background-color: #FFFAFA
+
+.hero
+  width: 100%
+  height: 50vh
+  background-image: url('../images/hero.jpg')
+  background-size: cover
+
+
+
+// layout
+
+.container
+  max-width: 1200px
+  width: 90%
+  margin: auto
+
+img
+  width: 100%

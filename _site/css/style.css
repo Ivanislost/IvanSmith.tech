@@ -46,6 +46,13 @@ h2{
   margin-bottom: 0.3em;
 }
 
+.date{
+  color: #53a474;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  font-size: 0.875rem;
+}
+
 nav a{
   text-transform: uppercase;
   font-weight: 600;
@@ -83,7 +90,7 @@ a:hover, a:focus{
   margin: auto;
 }
 
-.contentContainer{
+.homeContainer{
   display: flex;
   flex-direction: column;
 }
@@ -174,6 +181,45 @@ aside{
   object-fit: cover;
 }
 
+/* Creating a dropdown menu */
+
+.drop-menu{
+  position: relative;
+  height: auto;
+  width: auto;
+}
+.drop-menu a{
+  position: relative;
+  display: inline-block;
+}
+
+.menu-content{
+  display: none;
+  position: absolute;
+  width: 250px;
+  right: 0;
+  box-shadow: 0 0 10px 0
+  rgba(0, 0, 0, 0.2);
+  background-color:
+  #F9F9F4;
+  top: 20px;
+  padding: 1em 0
+}
+
+.drop-menu:hover .menu-content,
+.drop-menu:focus .menu-content{
+  display: block;
+}
+.navPost ~ .navPost{
+  margin-top: 0.75em;
+}
+.navPost .title{
+  color: #2C2C35;
+  margin-bottom: 0.125em;
+}
+.navPost .date{
+  font-size: 0.625rem;
+}
 
 /* Removes content for mobile */
 
@@ -186,7 +232,7 @@ aside{
 /* layout for deskweb form */
 
 @media (min-width: 700px) {
-  .contentContainer{
+  .homeContainer{
     flex-direction: row;
     justify-content: space-between;
     align-items: start;

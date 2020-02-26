@@ -1,0 +1,39 @@
+h2 {
+  font-family: "lust";
+  font-weight: 400;
+  font-size: 1.25rem; }
+
+@font-face {
+  font-family: "lust";
+  src: url("../fonts/LustSlim.ttf"); }
+@font-face {
+  font-family: "neuzeit";
+  src: url("../fonts/NeuzeitSBook.ttf"); }
+body {
+  color: #2C2C35;
+  font-family: "neuzeit"; }
+
+strong {
+  font-weight: bolder; }
+
+.accent {
+  color: #da4312; }
+
+body {
+  background-color: #FFFAFA; }
+
+.hero {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../images/hero.jpg");
+  background-size: cover; }
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto; }
+
+img {
+  width: 100%; }
+
+/*# sourceMappingURL=_base.css.map */

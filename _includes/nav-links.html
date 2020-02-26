@@ -1,5 +1,25 @@
 <ul>
-  <li><a href="Blog.html">Blog⤵</a></li>
-  <li><a href="Projects">Projects⤵</a></li>
+  <li class="drop-menu">
+      <a href="#">Blog⤵</a>
+      <div class="menu-content">
+        {% for post in site.posts %}
+        <div class="navPost">
+          <p class="title">{{ post.title }}</p>
+          <p class="date">{{ post.date | date: '%B %d, %Y'}}</p>
+        </div>
+        {% endfor %}
+      </div>
+  </li>
+  <li class="drop-menu">
+    <a href="#">Projects⤵</a>
+    <div class="menu-content">
+      <div class="navProject">
+        <a class="title" href="/projects/photography">Photography</a>
+      </div>
+      <div class="navProject">
+        <a href="/projects/pointFloat" class="title">Floating Points</a>
+      </div>
+    </div>
+  </li>
   <li><a href="about-me.html" class="current-page">About me</a></li>
 </ul>

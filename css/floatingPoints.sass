@@ -1,0 +1,41 @@
+@import 'base'
+
+// Typography
+.sketchTitle
+  font-size: 2rem
+
+.sketchContent
+  font-size: 1.125em
+  line-height: 1.2em
+
+.sketchContent
+  p + p
+    padding-top: 1em
+
+h3.logo
+  font-family: 'lust' 
+
+//sliders
+
+.hx-slider
+  max-width: 300px
+
+.settings
+  padding-top: 2em
+  width: 300px
+
+  //layout
+.projectContainer
+  padding: 1em 0 2em 0
+
+
+.sketchContainer
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+
+@media (min-width: $breakpoint-deskweb + 300px)
+  .sketchContainer
+    flex-direction: row
+    justify-content: space-between

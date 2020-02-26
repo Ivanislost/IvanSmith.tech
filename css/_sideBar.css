@@ -1,0 +1,62 @@
+h2 {
+  font-family: "lust";
+  font-weight: 400;
+  font-size: 1.25rem; }
+
+@font-face {
+  font-family: "lust";
+  src: url("../fonts/LustSlim.ttf"); }
+@font-face {
+  font-family: "neuzeit";
+  src: url("../fonts/NeuzeitSBook.ttf"); }
+body {
+  color: #2C2C35;
+  font-family: "neuzeit"; }
+
+.logo {
+  font-size: 3rem;
+  font-family: "lust";
+  font-weight: 400; }
+
+.accent {
+  color: #da4312; }
+
+html {
+  background-color: #FFF; }
+
+.hero {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../images/hero.jpg");
+  background-size: cover; }
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto; }
+
+img {
+  width: 100%; }
+
+.widget-title {
+  margin-bottom: 0.125em; }
+
+.sidebar {
+  padding: 2em;
+  border: 1px solid #E49829; }
+
+.sidebar-widget {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #da4312; }
+
+.sidebar-widget:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none; }
+
+.sidebar-widget img {
+  height: 5em;
+  object-fit: cover; }
+
+/*# sourceMappingURL=_sideBar.css.map */

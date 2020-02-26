@@ -1,0 +1,305 @@
+h2 {
+  font-family: "lust";
+  font-weight: 400;
+  font-size: 1.25rem; }
+
+.date {
+  color: #53a474;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  font-size: 0.875rem; }
+
+@font-face {
+  font-family: "lust";
+  src: url("../fonts/LustSlim.ttf"); }
+@font-face {
+  font-family: "neuzeit";
+  src: url("../fonts/NeuzeitSBook.ttf"); }
+body {
+  color: #2C2C35;
+  font-family: "neuzeit"; }
+
+strong {
+  font-weight: bolder; }
+
+.logo {
+  font-size: 3rem;
+  font-family: "lust";
+  font-weight: 400;
+  hover-cursor: pointer;
+  hover-color: #da4312; }
+
+.accent {
+  color: #da4312; }
+
+body {
+  background-color: #FFFAFA; }
+
+.hero {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../images/hero.jpg");
+  background-size: cover; }
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto; }
+
+img {
+  width: 100%; }
+
+h2 {
+  font-family: "lust";
+  font-weight: 400;
+  font-size: 1.25rem; }
+
+.date {
+  color: #53a474;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  font-size: 0.875rem; }
+
+@font-face {
+  font-family: "lust";
+  src: url("../fonts/LustSlim.ttf"); }
+@font-face {
+  font-family: "neuzeit";
+  src: url("../fonts/NeuzeitSBook.ttf"); }
+body {
+  color: #2C2C35;
+  font-family: "neuzeit"; }
+
+strong {
+  font-weight: bolder; }
+
+.logo {
+  font-size: 3rem;
+  font-family: "lust";
+  font-weight: 400;
+  hover-cursor: pointer;
+  hover-color: #da4312; }
+
+.accent {
+  color: #da4312; }
+
+body {
+  background-color: #FFFAFA; }
+
+.hero {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../images/hero.jpg");
+  background-size: cover; }
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto; }
+
+img {
+  width: 100%; }
+
+.widget-title {
+  margin-bottom: 0.125em; }
+
+.sidebar {
+  padding: 2em;
+  border: 1px solid #E49829; }
+
+.sidebar-widget {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #da4312; }
+
+.sidebar-widget:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none; }
+
+.sidebar-widget img {
+  height: 5em;
+  object-fit: cover; }
+
+h2 {
+  font-family: "lust";
+  font-weight: 400;
+  font-size: 1.25rem; }
+
+.date {
+  color: #53a474;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  font-size: 0.875rem; }
+
+@font-face {
+  font-family: "lust";
+  src: url("../fonts/LustSlim.ttf"); }
+@font-face {
+  font-family: "neuzeit";
+  src: url("../fonts/NeuzeitSBook.ttf"); }
+body {
+  color: #2C2C35;
+  font-family: "neuzeit"; }
+
+strong {
+  font-weight: bolder; }
+
+.logo {
+  font-size: 3rem;
+  font-family: "lust";
+  font-weight: 400;
+  hover-cursor: pointer;
+  hover-color: #da4312; }
+
+.accent {
+  color: #da4312; }
+
+body {
+  background-color: #FFFAFA; }
+
+.hero {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../images/hero.jpg");
+  background-size: cover; }
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto; }
+
+img {
+  width: 100%; }
+
+nav a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.625rem;
+  color: #53a474;
+  text-decoration: none;
+  margin: 0;
+  box-sizing: border-box; }
+
+a:hover, a:focus {
+  color: #da4312; }
+
+.current-page {
+  color: #E49829;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #E49829; }
+
+header {
+  padding-top: 5vw;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.drop-menu {
+  position: relative;
+  height: auto;
+  width: auto; }
+
+.drop-menu a {
+  position: relative;
+  display: inline-block; }
+
+.menu-content {
+  display: none;
+  position: absolute;
+  width: 250px;
+  right: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #F9F9F4;
+  top: 20px;
+  padding: 1em 0; }
+
+.drop-menu:hover .menu-content,
+.drop-menu:focus .menu-content {
+  display: block; }
+
+.navPost ~ .navPost {
+  margin-top: 0.75em; }
+
+.navPost .title {
+  color: #2C2C35;
+  margin-bottom: 0.125em; }
+
+.navPost .date {
+  font-size: 0.625rem; }
+
+@media (min-width: 700px) {
+  header {
+    padding-top: 0.125em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end; }
+
+  .logo {
+    text-align: left;
+    flex: 1 1 0; }
+
+  nav {
+    flex: 0 0 340px;
+    margin-bottom: 0.5em; }
+    nav ul {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between; }
+    nav a {
+      font-size: 1.125rem; } }
+.homeContainer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column; }
+
+.article-recent {
+  margin: 5vh auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-bottom: 2vh;
+  border-bottom: 1px solid #da4312; }
+
+.article-recent:first-child {
+  padding-top: 2vh;
+  border-top: 1px solid #da4312; }
+
+.article-recent-secondary {
+  order: -1;
+  margin-bottom: 1em; }
+
+@media (max-width: 700px) {
+  aside {
+    display: none; } }
+@media (min-width: 700px) {
+  .homeContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 2em; }
+
+  main {
+    flex: auto; }
+
+  aside {
+    flex: 0 0 15%;
+    margin-left: 5%; }
+
+  .article-recent {
+    flex-direction: row; }
+
+  .article-recent-main {
+    flex: 2.5 1 0; }
+
+  .article-recent-secondary {
+    flex: 1 1 0;
+    margin-right: 2%; } }
+
+/*# sourceMappingURL=homepage.css.map */
